@@ -22,7 +22,7 @@
 
   <style>
     :root{
-      --base:#ac933b;
+      --base:#5f5941;
       --spacing:20px;
       --blur:10px;
     }
@@ -64,7 +64,7 @@
 
     function handleUpdate(){
       const suffix = this.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + 'suffix')
     }
     inputs.forEach(input => input.addEventListener('change',handleUpdate))
     inputs.forEach(input => input.addEventListener('mousemove',handleUpdate))
